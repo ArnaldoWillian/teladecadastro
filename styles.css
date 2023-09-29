@@ -1,32 +1,38 @@
-*{
-
+* {
     font-family: Helvetica;
     box-sizing: border-box;
 }
 
-body{
+body {
     padding: 1rem;
+    background: url('brasil.png');
+    background-size: cover;
 }
 
-h1{
+h1 {
     text-align: center;
-
+    color: white; 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: .5rem;
     width: 500px;
     margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
 }
 
-label{
+label {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-input, select,textarea{
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -34,9 +40,9 @@ input, select,textarea{
     font-size: 1.1rem;
 }
 
-button{
+button {
     padding: 10px;
-    border:  none;
+    border: none;
     border-radius: 5px;
     background-color: #333;
     color: #fff;

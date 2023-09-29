@@ -4,19 +4,17 @@ const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
 const jobSelect = document.querySelector("#job");
 const messageTextarea = document.querySelector("#message");
-let login = document.querySelector("#login");
+const botaoEnviar = document.querySelector("#enviar");
+const exibirAlerta = document.querySelector("#login");
 
-var button = document.querySelector(".b1");
 
 
-console.log(form, nameInput, emailInput);
+
 
     form.addEventListener("submit", (event) =>{
-
     event.preventDefault();
 
-    //verifica se o nome está vazio
-
+   
     if(nameInput.value === ""){
         alert("Por Favor, preencha o seu nome");
         return;
@@ -39,6 +37,7 @@ console.log(form, nameInput, emailInput);
     if(messageTextarea.value ===""){
         alert("Por favor, escreva uma mensagem. ");
     }
+    
 
     form.submit();
 });
@@ -65,3 +64,6 @@ function validatePassword(password, minDigits){
     return false;
 }
 
+function exibirAlerta() {
+    alert("Isso é um alerta!");
+}
